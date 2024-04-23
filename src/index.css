@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.white-card {
+    background: rgba(29, 64, 104, 0.35);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+}
+
+
+
+
+.sidebar::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+.sidebar::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+.sidebar::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+
+.item-bar::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+.item-bar::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+.item-bar::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+
+
+.admin-sidebar::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* .card {
+    background: rgb(0, 53, 102, 0.75);
+    background: linear-gradient(146deg, rgba(0, 53, 102, 0.75) 0%, rgba(0, 29, 61, 0.75) 100%);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 10px;
+} */
+
+.login {
+    background-image: url("images/login.png");
+}
+
+.card-login {
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+
+.logoutbar {
+    -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-top {
+    0% {
+        -webkit-transform: translateY(100px);
+        transform: translateY(100px);
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-top {
+    0% {
+        -webkit-transform: translateY(100px);
+        transform: translateY(100px);
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
